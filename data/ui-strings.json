@@ -1,5 +1,5 @@
 {
-  "site.title": { "ja": "［研究室名］", "en": "[Lab Name]" },
+  "site.title": { "ja": "Marine Louis Research Group", "en": "Marine Louis Research Group" },
   "nav.home": { "ja": "トップ", "en": "Home" },
   "nav.research": { "ja": "研究内容", "en": "Research" },
   "nav.members": { "ja": "メンバー", "en": "Members" },
@@ -53,5 +53,5 @@
   },
 
   "footer.address": { "ja": "［大学名・学部・所在地］", "en": "[University, department, address]" },
-  "footer.copyright": { "ja": "© 2026 ［研究室名］", "en": "© 2026 [Lab Name]" }
+  "footer.copyright": { "ja": "copyright © 2026 Marine Louis Research Group", "en": "copyright © 2026 Marine Louis Research Group" }
 }
