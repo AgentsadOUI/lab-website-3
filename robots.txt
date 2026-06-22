@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/sitemap.xml
+Sitemap: https://AgentsadOUI.github.io/lab-website-3/sitemap.xml
