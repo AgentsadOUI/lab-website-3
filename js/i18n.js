@@ -5,6 +5,7 @@
   async function loadStrings() {
     const res = await fetch(dataPath("ui-strings.json"));
     uiStrings = await res.json();
+    localStorage.setItem("uiStrings", JSON.stringify(uiStrings));
   }
 
   function dataPath(file) {
@@ -24,6 +25,7 @@
       btn.classList.toggle("active", btn.dataset.lang === currentLang);
     });
     document.dispatchEvent(new CustomEvent("langchange", { detail: currentLang }));
+    document.documentElement.classList.add("i18n-ready");
   }
 
   function setLang(lang) {
@@ -38,6 +40,13 @@
   };
 
   document.addEventListener("DOMContentLoaded", async () => {
+    const cached = localStorage.getItem("uiStrings");
+    if (cached) {
+      try {
+        uiStrings = JSON.parse(cached);
+        applyTranslations();
+      } catch (e) {}
+    }
     await loadStrings();
     applyTranslations();
     document.querySelectorAll(".lang-btn").forEach((btn) => {
