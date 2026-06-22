@@ -12,10 +12,11 @@
         html += `<div class="pub-year">${p.year}</div>`;
         lastYear = p.year;
       }
+      const metaParts = [p.authors, p.journal ? `<em>${p.journal}</em>` : "", p.vol_pages].filter(Boolean);
       html += `
         <div class="pub-item">
           <div class="pub-title">${p.link ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : p.title}</div>
-          <div class="pub-meta">${p.authors} — <em>${p.journal}</em>, ${p.vol_pages}</div>
+          <div class="pub-meta">${metaParts.join(" — ")}</div>
         </div>`;
     });
     list.innerHTML = html;

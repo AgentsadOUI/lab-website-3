@@ -1,0 +1,30 @@
+name: Update publications from ORCID
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch publications from ORCID
+        run: node scripts/sync-orcid.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "orcid-bot"
+          git config user.email "actions@github.com"
+          git add data/publications.json
+          git diff --staged --quiet || git commit -m "Update publications from ORCID"
+          git push
