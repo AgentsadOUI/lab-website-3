@@ -18,7 +18,25 @@ function pickName(c) {
   return `${family}${family && given ? ", " : ""}${given}`.trim();
 }
 
-function pickDOI(externalIds) {
+function pickBestSummary(group) {
+  const summaries = group["work-summary"] ?? [];
+  if (summaries.length === 0) return null;
+
+  let best = summaries[0];
+  let bestScore = -1;
+
+  for (const s of summaries) {
+    const ids = s["external-ids"]?.["external-id"] ?? [];
+    const hasDoi = ids.some((id) => id["external-id-type"] === "doi");
+    const score = (hasDoi ? 2 : 0) + ids.length;
+    if (score > bestScore) {
+      bestScore = score;
+      best = s;
+    }
+  }
+
+  return best;
+}
   const list = externalIds?.["external-id"] ?? [];
   const doi = list.find((id) => id["external-id-type"] === "doi");
   if (!doi) return "";
@@ -32,7 +50,7 @@ async function main() {
   const publications = [];
 
   for (const group of groups) {
-    const summary = group["work-summary"]?.[0];
+    const summary = pickBestSummary(group);
     if (!summary) continue;
     const putCode = summary["put-code"];
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Remplacer https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/ ci-dessous
+  par l'URL réelle du site une fois déployé sur GitHub Pages
+  (voir README.md, section "Déploiement sur GitHub Pages").
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/research.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/members.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/publications.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://VOTRE-UTILISATEUR.github.io/VOTRE-REPO/contact.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

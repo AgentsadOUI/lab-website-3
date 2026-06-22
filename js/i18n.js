@@ -21,6 +21,12 @@
         el.textContent = uiStrings[key][currentLang];
       }
     });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-placeholder");
+      if (uiStrings[key] && uiStrings[key][currentLang] !== undefined) {
+        el.placeholder = uiStrings[key][currentLang];
+      }
+    });
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.lang === currentLang);
     });
@@ -37,6 +43,7 @@
   window.i18n = {
     getLang: () => currentLang,
     dataPath: dataPath,
+    strings: () => uiStrings,
   };
 
   document.addEventListener("DOMContentLoaded", async () => {

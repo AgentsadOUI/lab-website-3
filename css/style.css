@@ -317,6 +317,84 @@ section.block > h2::before {
 }
 .contact-label { color: var(--ink-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem; }
 
+/* Member profile page */
+.member-back {
+  display: inline-block;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  margin-bottom: 1.6rem;
+}
+.member-profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-bottom: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.member-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-alt);
+}
+.member-avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--spectrum);
+}
+.member-profile-info { flex: 1 1 260px; }
+.member-profile-info h1 { margin-bottom: 0.2rem; }
+.member-profile-info .member-role { font-size: 0.95rem; margin-bottom: 0.8rem; }
+.member-bio { color: var(--ink-muted); margin: 0; max-width: 60ch; }
+
+/* Publications search/filter */
+.pub-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.6rem;
+}
+.pub-search {
+  flex: 1 1 260px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+}
+.pub-search:focus-visible { outline: 2px solid var(--emit); outline-offset: 1px; }
+.pub-year-select {
+  flex: 0 1 140px;
+  padding: 0.55rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+}
+.pub-citations {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--emit-tint);
+  color: var(--emit);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 footer.site-footer {
   border-top: 1px solid var(--rule);
   background: var(--bg-alt);

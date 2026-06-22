@@ -3,19 +3,30 @@
 
   function render() {
     const lang = window.i18n.getLang();
-    const piEl = document.getElementById("pi-name");
-    if (piEl) piEl.textContent = data.pi[lang] ?? data.pi.ja ?? "";
+
+    const piWrap = document.getElementById("pi-name-wrap");
+    if (piWrap) {
+      const piName = data.pi[lang] ?? data.pi.ja ?? "";
+      piWrap.innerHTML = data.pi.slug
+        ? `<a href="member.html?slug=${encodeURIComponent(data.pi.slug)}">${piName}</a>`
+        : piName;
+    }
 
     const list = document.getElementById("member-list");
     if (!list) return;
     list.innerHTML = data.members
-      .map(
-        (m) => `
+      .map((m) => {
+        const name = lang === "ja" ? m.name_ja : m.name_en;
+        const role = lang === "ja" ? m.role_ja : m.role_en;
+        const nameHtml = m.slug
+          ? `<a href="member.html?slug=${encodeURIComponent(m.slug)}">${name}</a>`
+          : name;
+        return `
         <li class="member-row">
-          <span class="member-name">${lang === "ja" ? m.name_ja : m.name_en}</span>
-          <span class="member-role">${lang === "ja" ? m.role_ja : m.role_en}</span>
-        </li>`
-      )
+          <span class="member-name">${nameHtml}</span>
+          <span class="member-role">${role}</span>
+        </li>`;
+      })
       .join("");
   }
 

@@ -1,5 +1,5 @@
 (function () {
-  const PAGE_ORDER = ['index.html', 'research.html', 'members.html', 'publications.html', 'contact.html'];
+  const PAGE_ORDER = ['index.html', 'research.html', 'members.html', 'member.html', 'publications.html', 'contact.html'];
 
   function pageIndex(href) {
     const name = href.split('/').pop().split('?')[0] || 'index.html';

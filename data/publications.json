@@ -129,19 +129,11 @@
   },
   {
     "year": 2018,
-    "authors": "",
-    "title": "Mechano-responsive circularly polarized luminescence of organic solid-state chiral emitters",
-    "journal": "Chemical Sciences",
-    "vol_pages": "",
-    "link": ""
-  },
-  {
-    "year": 2018,
-    "authors": "",
+    "authors": "Louis, Marine; Guillot, Regis; Metivier, Remi; Allain, Clemence",
     "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
-    "journal": "Photochemical and Photobiological Sciences",
+    "journal": "Photochemical & Photobiological Sciences",
     "vol_pages": "",
-    "link": ""
+    "link": "https://doi.org/10.1039/C8PP00070K"
   },
   {
     "year": 2018,
@@ -153,11 +145,11 @@
   },
   {
     "year": 2018,
-    "authors": "Louis, Marine; Guillot, Regis; Metivier, Remi; Allain, Clemence",
-    "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
-    "journal": "Photochemical & Photobiological Sciences",
+    "authors": "",
+    "title": "Revealing the Origins of Mechanically Induced Fluorescence Changes in Organic Molecular Crystals",
+    "journal": "Advanced Materials",
     "vol_pages": "",
-    "link": "https://doi.org/10.1039/C8PP00070K"
+    "link": "https://doi.org/10.1002/adma.201800817"
   },
   {
     "year": 2017,
@@ -166,14 +158,6 @@
     "journal": "",
     "vol_pages": "",
     "link": "https://doi.org/10.70675/c6a0aeeaz4afcz4702z9ffaz8d98ff59d66f"
-  },
-  {
-    "year": 2017,
-    "authors": "",
-    "title": "Polymorphism, Mechanofluorochromism, and Photophysical Characterization of a Carbonyl Substituted Difluoroboron-β-Diketone Derivative",
-    "journal": "The Journal of Physical Chemistry C",
-    "vol_pages": "",
-    "link": ""
   },
   {
     "year": 2017,
@@ -190,13 +174,5 @@
     "journal": "Angewandte Chemie International Edition",
     "vol_pages": "",
     "link": "https://doi.org/10.1002/anie.201707160"
-  },
-  {
-    "year": 2018,
-    "authors": "",
-    "title": "Revealing the Origins of Mechanically Induced Fluorescence Changes in Organic Molecular Crystals",
-    "journal": "Advanced Materials",
-    "vol_pages": "",
-    "link": "https://doi.org/10.1002/adma.201800817"
   }
 ]
