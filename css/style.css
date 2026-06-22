@@ -339,28 +339,130 @@ footer.site-footer {
   * { transition: none !important; animation: none !important; }
 }
 
-/* Smooth navigation between pages */
-@view-transition {
-  navigation: auto;
-}
+/* ── Page transitions ─────────────────────────────────────── */
 
+/* Horizontal slide between pages (direction set by JS on <html>) */
+@view-transition { navigation: auto; }
+
+/* Default direction: forward (→) */
 ::view-transition-old(root) {
-  animation: fade-out 0.18s ease both;
+  animation: slide-out-left 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 ::view-transition-new(root) {
-  animation: fade-in-page 0.22s ease both;
+  animation: slide-in-right 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-/* Fallback fade-in for browsers without the View Transitions API */
-main {
-  animation: fade-in-page 0.35s ease both;
+/* Backward navigation (←) */
+[data-nav-dir="-1"]::view-transition-old(root) {
+  animation: slide-out-right 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+[data-nav-dir="-1"]::view-transition-new(root) {
+  animation: slide-in-left  0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-@keyframes fade-in-page {
-  from { opacity: 0; transform: translateY(6px); }
+/* Header stays put — only main slides */
+::view-transition-old(site-header),
+::view-transition-new(site-header) {
+  animation: none;
+}
+header.site-header { view-transition-name: site-header; }
+main               { view-transition-name: main-content; }
+
+::view-transition-old(main-content) {
+  animation: slide-out-left 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+::view-transition-new(main-content) {
+  animation: slide-in-right 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+[data-nav-dir="-1"]::view-transition-old(main-content) {
+  animation: slide-out-right 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+[data-nav-dir="-1"]::view-transition-new(main-content) {
+  animation: slide-in-left  0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes slide-out-left {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-28px); }
+}
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-out-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(28px); }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Fallback for browsers without View Transitions API */
+@supports not (view-transition-name: x) {
+  main { animation: fade-up 0.35s cubic-bezier(0.4, 0, 0.2, 1) both; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-@keyframes fade-out {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+
+/* ── Staggered content entry ──────────────────────────────── */
+
+/* Each staggered child fades + rises in */
+@keyframes stagger-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.news-item,
+.theme-card,
+.member-row,
+.pub-item,
+.contact-grid > div {
+  animation: stagger-in 0.38s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* nth-child cascade delays (up to 12 items) */
+.news-item:nth-child(1),  .theme-card:nth-child(1),
+.member-row:nth-child(1), .pub-item:nth-child(1),
+.contact-grid > div:nth-child(1) { animation-delay: 0.08s; }
+
+.news-item:nth-child(2),  .theme-card:nth-child(2),
+.member-row:nth-child(2), .pub-item:nth-child(2),
+.contact-grid > div:nth-child(2) { animation-delay: 0.13s; }
+
+.news-item:nth-child(3),  .theme-card:nth-child(3),
+.member-row:nth-child(3), .pub-item:nth-child(3),
+.contact-grid > div:nth-child(3) { animation-delay: 0.18s; }
+
+.news-item:nth-child(4),  .theme-card:nth-child(4),
+.member-row:nth-child(4), .pub-item:nth-child(4),
+.contact-grid > div:nth-child(4) { animation-delay: 0.22s; }
+
+.news-item:nth-child(5),  .theme-card:nth-child(5),
+.member-row:nth-child(5), .pub-item:nth-child(5)  { animation-delay: 0.26s; }
+.news-item:nth-child(6),  .theme-card:nth-child(6),
+.member-row:nth-child(6), .pub-item:nth-child(6)  { animation-delay: 0.30s; }
+.news-item:nth-child(n+7), .theme-card:nth-child(n+7),
+.member-row:nth-child(n+7), .pub-item:nth-child(n+7) { animation-delay: 0.34s; }
+
+/* Hero entrance */
+.hero-text  { animation: stagger-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s both; }
+.hero-spectrum { animation: stagger-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s both; }
+
+/* Section headings */
+section.block > h2, main > h1, main > p:first-of-type {
+  animation: stagger-in 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.04s both;
+}
+
+/* Spectrum bar slides in from left */
+.spectrum-bar {
+  animation: spectrum-slide 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+  transform-origin: left;
+}
+@keyframes spectrum-slide {
+  from { transform: scaleX(0); opacity: 0; }
+  to   { transform: scaleX(1); opacity: 1; }
 }
