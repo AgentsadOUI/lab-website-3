@@ -1,10 +1,202 @@
 [
   {
-    "year": 2026,
-    "authors": "Lastname, A.; Lastname, B.",
-    "title": "Example title of a publication to be replaced",
-    "journal": "Journal Name",
-    "vol_pages": "2026, 1, 1",
+    "year": 2025,
+    "authors": "Yugo Tsuji; Chigusa Goto; Shohei Katao; Wataru Ishii; Colin J. Martin; Takuya Nakashima; Gilles Clavier; Tsuyoshi Kawai; Marine Louis",
+    "title": "Room‐Temperature Inversion of Phosphorescence and Fluorescence Emission Triggered in Twisted Dimeric Structures Displaying Excitonic Coupling",
+    "journal": "Chemistry – A European Journal",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/chem.202500762"
+  },
+  {
+    "year": 2024,
+    "authors": "Magin Benedict Ferrer; Daiyu Harada; Colin J. Martin; Rémi Métivier; Clémence Allain; Keitaro Nakatani; Marine Louis; Noriaki Kawaguchi; Takayuki Yanagida; Kazuma Yasuhara; Tsuyoshi Kawai",
+    "title": "Cascade Fluorescence Modulation in Photochromic Microcapsules",
+    "journal": "ACS Applied Materials & Interfaces",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/acsami.4c09023"
+  },
+  {
+    "year": 2024,
+    "authors": "Shiho Katsumi; Yusuke Kugai; Marine Louis; Tsumoru Morimoto; Mihoko Yamada; Stéphane Maisonneuve; Chigusa Goto; Rémi Métivier; Tsuyoshi Kawai; Clémence Allain",
+    "title": "C 3‐symmetric luminescent diketone with amido‐linkage as a polymorphic fluorescence emitter",
+    "journal": "Chemistry – A European Journal",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/chem.202304278"
+  },
+  {
+    "year": 2024,
+    "authors": "Suguru Higashida; Ryota Toku; Genta Nakano; Ryo Mizutsu; Ryosuke Asato; Marine Louis; Tsuyoshi Akiyama; Tsuyoshi Kawai",
+    "title": "Enhancement of photochromic molecule decolorization by coating a thin Ti(O) layer over gold nanoparticles",
+    "journal": "Chemistry Letters",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1093/chemle/upad002"
+  },
+  {
+    "year": 2024,
+    "authors": "Shiho Katsumi; Marine Louis; Tsumoru Morimoto; Chigusa Goto; Shouhei Katao; Fuyuki Ito; Rémi Métivier; Tsuyoshi Kawai; Clémence Allain",
+    "title": "Amino methoxy difluoroboron diketonate as a multicolor and multi-responsive polymorphic fluorescence emitter",
+    "journal": "Journal of Photochemistry and Photobiology A: Chemistry",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1016/j.jphotochem.2023.115254"
+  },
+  {
+    "year": 2023,
+    "authors": "Yugo Tsuji; Natsuko Kanno; Chigusa Goto; Shohei Katao; Yasuo Okajima; Pablo Reine; Paulius Imbrasas; Sebastian Reineke; Katsuyuki Shizu; Takuya Nakashima; Hironori Kaji; Tsuyoshi Kawai; Marine Louis",
+    "title": "A binaphthalimide motif as a chiral scaffold for thermally activated delayed fluorescence with circularly polarized luminescence activity",
+    "journal": "Journal of Materials Chemistry C",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1039/d3tc00316g"
+  },
+  {
+    "year": 2023,
+    "authors": "Louis, Marine; Tan, Yan Bing; Reine, Pablo; Katao, Shohei; Nishikawa, Yoshiko; Asanoma, Fumio; Kawai, Tsuyoshi",
+    "title": "Conglomerate, Racemate, and Achiral Crystals of Polymetallic Europium(III) Compounds of Bis- or Tris-β-diketonate Ligands and Circularly Polarized Luminescence Study",
+    "journal": "ACS Omega",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/ACSOMEGA.2C07310"
+  },
+  {
+    "year": 2022,
+    "authors": "Panis, Joy Ann; Louis, Marine; Brosseau, Arnaud; Katao, Shouhei; de los Reyes, Florencio; Nakashima, Takuya; Metivier, Remi; Allain, Clemence; Kawai, Tsuyoshi",
+    "title": "Circularly Polarized Luminescence and Circular Dichroism of Bichromophoric Difluoroboron-β-diketonates: Inversion and Enhanced Chirality Based on Spatial Arrangements and Self-Assembly",
+    "journal": "Chemistry - A European Journal",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/CHEM.202201012"
+  },
+  {
+    "year": 2021,
+    "authors": "Benjamin Poggi; Laurence Bodelot; Marine Louis; Rémi Métivier; Clémence Allain",
+    "title": "Quantification of mechanofluorochromism at the macroscale <i>via</i> colorimetric analysis of controlled mechanical stimulation",
+    "journal": "Journal of Materials Chemistry C",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1039/d1tc02274a"
+  },
+  {
+    "year": 2020,
+    "authors": "Felix Fries; Marine Louis; Reinhard Scholz; Max Gmelch; Heidi Thomas; Anna Haft; Sebastian Reineke",
+    "title": "Dissecting Tetra-<i>N</i>-phenylbenzidine: Biphenyl as the Origin of Room Temperature Phosphorescence",
+    "journal": "The Journal of Physical Chemistry A",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/acs.jpca.9b09148"
+  },
+  {
+    "year": 2020,
+    "authors": "Thomas, Heidi; Pastoetter, Dominik L.; Gmelch, Max; Achenbach, Tim; Schloegl, Annika; Louis, Marine; Feng, Xinliang; Reineke, Sebastian",
+    "title": "Aromatic Phosphonates: A Novel Group of Emitters Showing Blue Ultralong Room Temperature Phosphorescence",
+    "journal": "Advanced Materials",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/ADMA.202000880"
+  },
+  {
+    "year": 2020,
+    "authors": "Louis, Marine; Thomas, Heidi; Gmelch, Max; Fries, Felix; Haft, Anna; Lindenthal, Jakob; Reineke, Sebastian",
+    "title": "Biluminescence Under Ambient Conditions: Water-Soluble Organic Emitter in High-Oxygen-Barrier Polymer",
+    "journal": "Advanced Optical Materials",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/ADOM.202000427"
+  },
+  {
+    "year": 2019,
+    "authors": "Marine Louis; Cristian Piñero García; Arnaud Brosseau; Clémence Allain; Rémi Métivier",
+    "title": "Mechanofluorochromism of a Difluoroboron-β-Diketonate Derivative at the Nanoscale",
+    "journal": "The Journal of Physical Chemistry Letters",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/acs.jpclett.9b01923"
+  },
+  {
+    "year": 2019,
+    "authors": "Marine Louis; Heidi Thomas; Max Gmelch; Anna Haft; Felix Fries; Sebastian Reineke",
+    "title": "Blue‐Light‐Absorbing Thin Films Showing Ultralong Room‐Temperature Phosphorescence",
+    "journal": "Advanced Materials",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/adma.201807887"
+  },
+  {
+    "year": 2019,
+    "authors": "Louis, Marine; Sethy, Ramarani; Kumar, Jatish; Katao, Shouhei; Guillot, Regis; Nakashima, Takuya; Allain, Clemence; Kawai, Tsuyoshi; Metivier, Remi",
+    "title": "Mechano-responsive circularly polarized luminescence of organic solid-state chiral emitters",
+    "journal": "Chemical Science",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1039/C8SC04026E"
+  },
+  {
+    "year": 2018,
+    "authors": "",
+    "title": "Matériaux mécanofluorochromes : de l’ingénierie moléculaire au développement de capteurs de force ?",
+    "journal": "L'Actualité Chimique",
+    "vol_pages": "",
     "link": ""
+  },
+  {
+    "year": 2018,
+    "authors": "",
+    "title": "Mechano-responsive circularly polarized luminescence of organic solid-state chiral emitters",
+    "journal": "Chemical Sciences",
+    "vol_pages": "",
+    "link": ""
+  },
+  {
+    "year": 2018,
+    "authors": "",
+    "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
+    "journal": "Photochemical and Photobiological Sciences",
+    "vol_pages": "",
+    "link": ""
+  },
+  {
+    "year": 2018,
+    "authors": "Louis, M.; Brosseau, A.; Métivier, R.; Allain, C.",
+    "title": "Mechanofluorochromic materials: From molecular engineering to the development of force sensors?,Matériaux mécanofluorochromes De l'ingénierie moléculaire au développement de capteurs de force ?",
+    "journal": "Actualite Chimique",
+    "vol_pages": "",
+    "link": ""
+  },
+  {
+    "year": 2018,
+    "authors": "Louis, Marine; Guillot, Regis; Metivier, Remi; Allain, Clemence",
+    "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
+    "journal": "Photochemical & Photobiological Sciences",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1039/C8PP00070K"
+  },
+  {
+    "year": 2017,
+    "authors": "",
+    "title": "Synthèse et études de systèmes mécanofluorochromes vers le développement de sondes locales de contraintes",
+    "journal": "",
+    "vol_pages": "",
+    "link": "https://doi.org/10.70675/c6a0aeeaz4afcz4702z9ffaz8d98ff59d66f"
+  },
+  {
+    "year": 2017,
+    "authors": "",
+    "title": "Polymorphism, Mechanofluorochromism, and Photophysical Characterization of a Carbonyl Substituted Difluoroboron-β-Diketone Derivative",
+    "journal": "The Journal of Physical Chemistry C",
+    "vol_pages": "",
+    "link": ""
+  },
+  {
+    "year": 2017,
+    "authors": "Louis, Marine; Brosseau, Arnaud; Guillot, Regis; Ito, Fuyuki; Allain, Clemence; Metivier, Remi",
+    "title": "Polymorphism, Mechanofluorochromism, and Photophysical Characterization of a Carbonyl Substituted Difluoroboron-β-Diketone Derivative",
+    "journal": "The Journal of Physical Chemistry C",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/ACS.JPCC.7B01901"
+  },
+  {
+    "year": 0,
+    "authors": "",
+    "title": "Enantioselective Light Harvesting with Perylenediimide Guests on Self-Assembled Chiral Naphthalenediimide Nanofibers",
+    "journal": "Angewandte Chemie International Edition",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/anie.201707160"
+  },
+  {
+    "year": 0,
+    "authors": "",
+    "title": "Revealing the Origins of Mechanically Induced Fluorescence Changes in Organic Molecular Crystals",
+    "journal": "Advanced Materials",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1002/adma.201800817"
   }
 ]
