@@ -48,8 +48,8 @@
   "contact.email.label": { "ja": "メール", "en": "Email" },
   "contact.access.label": { "ja": "アクセス", "en": "Access" },
   "contact.access.text": {
-    "ja": "［最寄り駅からのアクセス情報をここに記載］",
-    "en": "[Directions from the nearest station go here]"
+    "ja": "［］",
+    "en": "go here"
   },
 
   "footer.address": { "ja": "［大学名・学部・所在地］", "en": "[University, department, address]" },
