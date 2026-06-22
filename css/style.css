@@ -27,6 +27,13 @@ html, body {
   color: var(--ink);
   font-family: var(--sans);
   line-height: 1.75;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 ::selection {
@@ -155,6 +162,8 @@ main {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 2.5rem 1.25rem 4rem;
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 .hero {
@@ -327,5 +336,31 @@ footer.site-footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
+}
+
+/* Smooth navigation between pages */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 0.18s ease both;
+}
+::view-transition-new(root) {
+  animation: fade-in-page 0.22s ease both;
+}
+
+/* Fallback fade-in for browsers without the View Transitions API */
+main {
+  animation: fade-in-page 0.35s ease both;
+}
+
+@keyframes fade-in-page {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
