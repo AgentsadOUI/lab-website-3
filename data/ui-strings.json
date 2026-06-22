@@ -52,6 +52,6 @@
     "en": "go here"
   },
 
-  "footer.address": { "ja": "［大学名・学部・所在地］", "en": "[University, department, address]" },
+  "footer.address": { "ja": "your adress here in jap", "en": "your adress here in english" },
   "footer.copyright": { "ja": "copyright © 2026 Marine Louis Research Group", "en": "copyright © 2026 Marine Louis Research Group" }
 }
