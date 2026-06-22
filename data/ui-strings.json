@@ -1,0 +1,57 @@
+{
+  "site.title": { "ja": "［研究室名］", "en": "[Lab Name]" },
+  "nav.home": { "ja": "トップ", "en": "Home" },
+  "nav.research": { "ja": "研究内容", "en": "Research" },
+  "nav.members": { "ja": "メンバー", "en": "Members" },
+  "nav.publications": { "ja": "業績", "en": "Publications" },
+  "nav.contact": { "ja": "連絡先", "en": "Contact" },
+
+  "hero.tagline": {
+    "ja": "光化学・蛍光性分子の合成 — 蛍光性分子の設計・合成とその光物性に関する研究を行っています。",
+    "en": "Photochemistry — design and synthesis of fluorescent molecules and the study of their photophysical properties."
+  },
+
+  "news.heading": { "ja": "お知らせ", "en": "News" },
+  "research.heading": { "ja": "研究内容", "en": "Research" },
+  "research.intro": {
+    "ja": "当研究室では、光化学と有機合成化学を基盤として、新しい蛍光性分子の開発とその応用に取り組んでいます。以下は主な研究テーマの例です（内容は実際の研究に合わせて編集してください）。",
+    "en": "Our group combines photochemistry and organic synthesis to develop new fluorescent molecules and explore their applications. The themes below are placeholders — edit them to match your actual research."
+  },
+  "theme1.title": { "ja": "蛍光性分子の合成", "en": "Synthesis of fluorescent dyes" },
+  "theme1.text": {
+    "ja": "新規骨格を持つ蛍光性色素の設計・合成と、構造と光物性の関係解明。",
+    "en": "Design and synthesis of fluorescent dyes with novel scaffolds, and structure–photophysics relationships."
+  },
+  "theme2.title": { "ja": "光化学反応の開発", "en": "Photochemical reaction development" },
+  "theme2.text": {
+    "ja": "光を駆動力とする有機合成手法の開発と、その機構解明。",
+    "en": "Development of light-driven synthetic methods and mechanistic studies."
+  },
+  "theme3.title": { "ja": "機能性材料への応用", "en": "Applications in functional materials" },
+  "theme3.text": {
+    "ja": "合成した蛍光分子のセンシングやイメージングなどへの応用。",
+    "en": "Application of synthesized fluorophores to sensing, imaging, and related technologies."
+  },
+
+  "members.heading": { "ja": "メンバー", "en": "Members" },
+  "members.pi.role": { "ja": "代表者 / 教授", "en": "Principal Investigator" },
+  "members.list.heading": { "ja": "研究室メンバー", "en": "Lab Members" },
+
+  "publications.heading": { "ja": "業績", "en": "Publications" },
+  "publications.intro": {
+    "ja": "発表論文の一覧です。",
+    "en": "List of publications."
+  },
+
+  "contact.heading": { "ja": "連絡先", "en": "Contact" },
+  "contact.address.label": { "ja": "所在地", "en": "Address" },
+  "contact.email.label": { "ja": "メール", "en": "Email" },
+  "contact.access.label": { "ja": "アクセス", "en": "Access" },
+  "contact.access.text": {
+    "ja": "［最寄り駅からのアクセス情報をここに記載］",
+    "en": "[Directions from the nearest station go here]"
+  },
+
+  "footer.address": { "ja": "［大学名・学部・所在地］", "en": "[University, department, address]" },
+  "footer.copyright": { "ja": "© 2026 ［研究室名］", "en": "© 2026 [Lab Name]" }
+}

@@ -1,0 +1,10 @@
+{
+  "pi": {
+    "ja": "［氏名］",
+    "en": "[PI Name]"
+  },
+  "members": [
+    { "role_ja": "博士課程", "role_en": "PhD Student", "name_ja": "［氏名］", "name_en": "[Name]" },
+    { "role_ja": "修士課程", "role_en": "Master's Student", "name_ja": "［氏名］", "name_en": "[Name]" }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="site.title">［研究室名］</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-depth="">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="index.html" data-i18n="site.title">［研究室名］</a>
+    <nav class="main-nav">
+      <a href="index.html" class="active" data-i18n="nav.home">トップ</a>
+      <a href="research.html" data-i18n="nav.research">研究内容</a>
+      <a href="members.html" data-i18n="nav.members">メンバー</a>
+      <a href="publications.html" data-i18n="nav.publications">業績</a>
+      <a href="contact.html" data-i18n="nav.contact">連絡先</a>
+    </nav>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="ja">JA</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+<div class="spectrum-bar"></div>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-i18n="site.title">［研究室名］</h1>
+      <p class="tagline" data-i18n="hero.tagline">…</p>
+    </div>
+    <div class="hero-spectrum">
+      <svg viewBox="0 0 260 120" width="100%" height="auto" role="img" aria-label="Absorption and emission spectrum illustration">
+        <line x1="10" y1="108" x2="250" y2="108" stroke="var(--rule)" stroke-width="1"/>
+        <path d="M20,108 C50,108 60,20 90,20 C120,20 130,108 160,108"
+              fill="none" stroke="var(--absorb)" stroke-width="2.5"/>
+        <path d="M20,108 C50,108 60,20 90,20 C120,20 130,108 160,108 L160,108 L20,108 Z"
+              fill="var(--absorb)" opacity="0.08" stroke="none"/>
+        <path d="M80,108 C110,108 120,35 150,35 C180,35 190,108 220,108"
+              fill="none" stroke="var(--emit)" stroke-width="2.5"/>
+        <path d="M80,108 C110,108 120,35 150,35 C180,35 190,108 220,108 L220,108 L80,108 Z"
+              fill="var(--emit)" opacity="0.08" stroke="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 data-i18n="news.heading">お知らせ</h2>
+    <ul class="news-list" id="news-list"></ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p data-i18n="footer.address">［大学名・学部・所在地］</p>
+    <p data-i18n="footer.copyright">© 2026 ［研究室名］</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/render-news.js"></script>
+</body>
+</html>
