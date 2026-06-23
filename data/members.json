@@ -3,7 +3,7 @@
     "slug": "pi",
     "ja": "［氏名］",
     "en": "[PI Name]",
-    "photo": "",
+    "photo": "img/members/photo.jpeg",
     "bio_ja": "［経歴・専門分野などをここに記載］",
     "bio_en": "[Background and research focus go here]"
   },
@@ -14,7 +14,7 @@
       "role_en": "PhD Student",
       "name_ja": "［氏名］",
       "name_en": "[Name]",
-      "photo": "",
+      "photo": "img/members/photo1.jpeg",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
       "bio_en": "[Research interests go here]"
     },
@@ -24,7 +24,7 @@
       "role_en": "Master's Student",
       "name_ja": "［氏名］",
       "name_en": "[Name]",
-      "photo": "",
+      "photo": "img/members/photo2.jpeg",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
       "bio_en": "[Research interests go here]"
     }
