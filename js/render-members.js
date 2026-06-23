@@ -1,15 +1,55 @@
 (function () {
   let data = { pi: {}, members: [] };
 
+  function initials(name) {
+    return (name || "")
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((w) => w[0])
+      .join("")
+      .toUpperCase();
+  }
+
+  function avatarHtml(name, photo) {
+    if (photo) {
+      return `<img class="member-avatar" src="${photo}" alt="${name}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-avatar member-avatar-fallback',textContent:'${initials(name)}'}))">`;
+    }
+    return `<div class="member-avatar member-avatar-fallback">${initials(name)}</div>`;
+  }
+
+  function cardHtml({ name, role, bio, photo, slug }) {
+    const nameHtml = slug
+      ? `<a href="member.html?slug=${encodeURIComponent(slug)}">${name}</a>`
+      : name;
+    return `
+      <div class="member-card">
+        ${avatarHtml(name, photo)}
+        <div class="member-card-info">
+          <div class="member-card-header">
+            <span class="member-card-name">${nameHtml}</span>
+            <span class="member-role">${role || ""}</span>
+          </div>
+          ${bio ? `<p class="member-bio">${bio}</p>` : ""}
+        </div>
+      </div>`;
+  }
+
   function render() {
     const lang = window.i18n.getLang();
 
-    const piWrap = document.getElementById("pi-name-wrap");
+    const piWrap = document.getElementById("pi-card-wrap");
     if (piWrap) {
       const piName = data.pi[lang] ?? data.pi.ja ?? "";
-      piWrap.innerHTML = data.pi.slug
-        ? `<a href="member.html?slug=${encodeURIComponent(data.pi.slug)}">${piName}</a>`
-        : piName;
+      const piRole = window.i18n.strings()["members.pi.role"]?.[lang] || "";
+      const piBio = lang === "ja" ? data.pi.bio_ja : data.pi.bio_en;
+      piWrap.innerHTML = cardHtml({
+        name: piName,
+        role: piRole,
+        bio: piBio,
+        photo: data.pi.photo,
+        slug: data.pi.slug,
+      });
     }
 
     const list = document.getElementById("member-list");
@@ -18,14 +58,8 @@
       .map((m) => {
         const name = lang === "ja" ? m.name_ja : m.name_en;
         const role = lang === "ja" ? m.role_ja : m.role_en;
-        const nameHtml = m.slug
-          ? `<a href="member.html?slug=${encodeURIComponent(m.slug)}">${name}</a>`
-          : name;
-        return `
-        <li class="member-row">
-          <span class="member-name">${nameHtml}</span>
-          <span class="member-role">${role}</span>
-        </li>`;
+        const bio = lang === "ja" ? m.bio_ja : m.bio_en;
+        return cardHtml({ name, role, bio, photo: m.photo, slug: m.slug });
       })
       .join("");
   }

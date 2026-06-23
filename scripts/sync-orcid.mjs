@@ -37,6 +37,7 @@ function pickBestSummary(group) {
 
   return best;
 }
+function pickDOI(externalIds) {
   const list = externalIds?.["external-id"] ?? [];
   const doi = list.find((id) => id["external-id-type"] === "doi");
   if (!doi) return "";
@@ -44,6 +45,20 @@ function pickBestSummary(group) {
 }
 
 async function main() {
+  const fs = await import("node:fs/promises");
+
+  let existing = [];
+  try {
+    existing = JSON.parse(await fs.readFile("data/publications.json", "utf-8"));
+  } catch (e) {}
+
+  const byDoi = new Map();
+  const byTitle = new Map();
+  for (const p of existing) {
+    if (p.link) byDoi.set(p.link, p);
+    byTitle.set((p.title || "").trim().toLowerCase(), p);
+  }
+
   const works = await getJSON(`${API}/${ORCID_ID}/works`);
   const groups = works.group ?? [];
 
@@ -69,6 +84,8 @@ async function main() {
     const contributors = detail.contributors?.contributor ?? [];
     const authors = contributors.map(pickName).filter(Boolean).join("; ");
 
+    const previous = byDoi.get(link) || byTitle.get(title.trim().toLowerCase());
+
     publications.push({
       year,
       authors: authors || "",
@@ -76,6 +93,7 @@ async function main() {
       journal,
       vol_pages: "",
       link,
+      photo: previous?.photo || "",
     });
 
     await sleep(200);
@@ -83,7 +101,6 @@ async function main() {
 
   publications.sort((a, b) => b.year - a.year);
 
-  const fs = await import("node:fs/promises");
   await fs.writeFile(
     "data/publications.json",
     JSON.stringify(publications, null, 2) + "\n"

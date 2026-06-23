@@ -1,7 +1,6 @@
 (function () {
   let member = null;
   let isPI = false;
-  let publications = [];
 
   function getSlug() {
     return new URLSearchParams(location.search).get("slug") || "";
@@ -22,40 +21,6 @@
       return `<img class="member-avatar" src="${photo}" alt="${name}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-avatar member-avatar-fallback',textContent:'${initials(name)}'}))">`;
     }
     return `<div class="member-avatar member-avatar-fallback">${initials(name)}</div>`;
-  }
-
-  function matchesMember(authors) {
-    if (!member || !Array.isArray(member.name_match) || member.name_match.length === 0) return false;
-    const a = (authors || "").toLowerCase();
-    return member.name_match.some((n) => a.includes(String(n).toLowerCase()));
-  }
-
-  function renderPubs() {
-    const lang = window.i18n.getLang();
-    const list = document.getElementById("member-pub-list");
-    if (!list) return;
-    const matched = publications.filter((p) => matchesMember(p.authors));
-    if (matched.length === 0) {
-      const strings = window.i18n.strings();
-      list.innerHTML = `<p class="news-empty">${strings["member.publications.empty"]?.[lang] || ""}</p>`;
-      return;
-    }
-    const sorted = [...matched].sort((a, b) => b.year - a.year);
-    let html = "";
-    let lastYear = null;
-    sorted.forEach((p) => {
-      if (p.year !== lastYear) {
-        html += `<div class="pub-year">${p.year}</div>`;
-        lastYear = p.year;
-      }
-      const metaParts = [p.authors, p.journal ? `<em>${p.journal}</em>` : "", p.vol_pages].filter(Boolean);
-      html += `
-        <div class="pub-item">
-          <div class="pub-title">${p.link ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : p.title}</div>
-          <div class="pub-meta">${metaParts.join(" — ")}</div>
-        </div>`;
-    });
-    list.innerHTML = html;
   }
 
   function render() {
@@ -90,19 +55,13 @@
           ${bio ? `<p class="member-bio">${bio}</p>` : ""}
         </div>
       </div>`;
-
-    renderPubs();
   }
 
   async function init() {
     const slug = getSlug();
     try {
-      const [membersRes, pubsRes] = await Promise.all([
-        fetch(window.i18n.dataPath("members.json")),
-        fetch(window.i18n.dataPath("publications.json")),
-      ]);
-      const data = await membersRes.json();
-      publications = await pubsRes.json();
+      const res = await fetch(window.i18n.dataPath("members.json"));
+      const data = await res.json();
 
       if (data.pi && data.pi.slug === slug) {
         member = data.pi;
@@ -113,7 +72,6 @@
       }
     } catch (e) {
       member = null;
-      publications = [];
     }
     render();
   }

@@ -5,8 +5,7 @@
     "en": "[PI Name]",
     "photo": "",
     "bio_ja": "［経歴・専門分野などをここに記載］",
-    "bio_en": "[Background and research focus go here]",
-    "name_match": []
+    "bio_en": "[Background and research focus go here]"
   },
   "members": [
     {
@@ -17,8 +16,7 @@
       "name_en": "[Name]",
       "photo": "",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
-      "bio_en": "[Research interests go here]",
-      "name_match": []
+      "bio_en": "[Research interests go here]"
     },
     {
       "slug": "member-2",
@@ -28,8 +26,7 @@
       "name_en": "[Name]",
       "photo": "",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
-      "bio_en": "[Research interests go here]",
-      "name_match": []
+      "bio_en": "[Research interests go here]"
     }
   ]
 }

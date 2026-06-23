@@ -121,10 +121,16 @@
       }
       const doi = doiFromLink(p.link);
       const metaParts = [p.authors, p.journal ? `<em>${p.journal}</em>` : "", p.vol_pages].filter(Boolean);
+      const thumb = p.photo
+        ? `<img class="pub-photo" src="${p.photo}" alt="" onerror="this.remove()">`
+        : "";
       html += `
         <div class="pub-item"${doi ? ` data-doi="${doi}"` : ""}>
-          <div class="pub-title">${p.link ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : p.title}</div>
-          <div class="pub-meta">${metaParts.join(" — ")}</div>
+          ${thumb}
+          <div class="pub-body">
+            <div class="pub-title">${p.link ? `<a href="${p.link}" target="_blank" rel="noopener">${p.title}</a>` : p.title}</div>
+            <div class="pub-meta">${metaParts.join(" — ")}</div>
+          </div>
         </div>`;
     });
     list.innerHTML = html;

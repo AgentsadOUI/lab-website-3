@@ -35,7 +35,8 @@
       <p class="tagline" data-i18n="hero.tagline">…</p>
     </div>
     <div class="hero-spectrum">
-      <svg viewBox="0 0 260 120" width="100%" height="auto" role="img" aria-label="Absorption and emission spectrum illustration">
+      <img class="hero-photo" src="img/home/hero.jpg" alt="" onerror="this.style.display='none';document.getElementById('hero-fallback').style.display='block'">
+      <svg id="hero-fallback" viewBox="0 0 260 120" width="100%" height="auto" role="img" aria-label="Absorption and emission spectrum illustration" style="display:none">
         <line x1="10" y1="108" x2="250" y2="108" stroke="var(--rule)" stroke-width="1"/>
         <path d="M20,108 C50,108 60,20 90,20 C120,20 130,108 160,108"
               fill="none" stroke="var(--absorb)" stroke-width="2.5"/>

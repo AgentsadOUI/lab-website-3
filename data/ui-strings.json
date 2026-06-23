@@ -17,20 +17,20 @@
     "ja": "当研究室では、光化学と有機合成化学を基盤として、新しい蛍光性分子の開発とその応用に取り組んでいます。以下は主な研究テーマの例です（内容は実際の研究に合わせて編集してください）。",
     "en": "Our group combines photochemistry and organic synthesis to develop new fluorescent molecules and explore their applications. The themes below are placeholders — edit them to match your actual research."
   },
-  "theme1.title": { "ja": "蛍光性分子の合成", "en": "Synthesis of fluorescent dyes" },
+  "theme1.title": { "ja": "熱活性化遅延蛍光・室温りん光", "en": "Thermally Activated Delayed Fluorescence / Room-Temperature Phosphorescence" },
   "theme1.text": {
-    "ja": "新規骨格を持つ蛍光性色素の設計・合成と、構造と光物性の関係解明。",
-    "en": "Design and synthesis of fluorescent dyes with novel scaffolds, and structure–photophysics relationships."
+    "ja": "一重項励起子と三重項励起子の両方を活用できる有機分子を設計し、より明るく高効率な発光を実現します。これらの次世代発光体は、高性能OLEDや光電子デバイスへの応用を切り拓きます。",
+    "en": "We design organic molecules that can harvest both singlet and triplet excitons, enabling brighter and more energy-efficient light emission. These next-generation emitters pave the way for advanced OLEDs and optoelectronic devices."
   },
-  "theme2.title": { "ja": "光化学反応の開発", "en": "Photochemical reaction development" },
+  "theme2.title": { "ja": "光スイッチング可能な金属錯体", "en": "Light-Switchable Metal Complexes" },
   "theme2.text": {
-    "ja": "光を駆動力とする有機合成手法の開発と、その機構解明。",
-    "en": "Development of light-driven synthetic methods and mechanistic studies."
+    "ja": "フォトクロミック配位子を金属錯体に組み込むことで、光により自在にオン・オフを切り替えられる分子を構築します。これらの動的システムは、スマート触媒や応答性機能材料への応用を開きます。",
+    "en": "By integrating photochromic ligands into coordination complexes, we create molecules that can be switched on demand with light. These dynamic systems open opportunities in smart catalysis and responsive functional materials."
   },
-  "theme3.title": { "ja": "機能性材料への応用", "en": "Applications in functional materials" },
+  "theme3.title": { "ja": "円偏光：液晶による解決策", "en": "Circularly Polarized Light: Solutions from Liquid Crystals" },
   "theme3.text": {
-    "ja": "合成した蛍光分子のセンシングやイメージングなどへの応用。",
-    "en": "Application of synthesized fluorophores to sensing, imaging, and related technologies."
+    "ja": "キラルなドーパントの添加や、本質的にキラルな液晶の設計により、円偏光発光（CPL）を増強する手法を探求しています。分子キラリティと自己組織化したソフトマターを組み合わせ、新たなフォトニクス・ディスプレイ技術への道を開きます。",
+    "en": "We explore how doping or designing intrinsically chiral liquid crystals can amplify circularly polarized luminescence (CPL). This approach combines molecular chirality with self-organized soft matter to unlock new photonic and display technologies."
   },
 
   "members.heading": { "ja": "メンバー", "en": "Members" },
@@ -47,8 +47,6 @@
   "publications.empty": { "ja": "該当する業績はありません。", "en": "No publications match your search." },
 
   "member.back": { "ja": "← メンバー一覧へ", "en": "← Back to members" },
-  "member.publications.heading": { "ja": "関連する業績", "en": "Related publications" },
-  "member.publications.empty": { "ja": "該当する業績はありません。", "en": "No matching publications." },
   "member.notFound": { "ja": "メンバーが見つかりません。", "en": "Member not found." },
 
   "contact.heading": { "ja": "連絡先", "en": "Contact" },
