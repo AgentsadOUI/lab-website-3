@@ -35,6 +35,15 @@
       </div>`;
   }
 
+  function applyStagger(container, startIndex) {
+    container.querySelectorAll(".member-card").forEach((card, i) => {
+      card.style.animationDelay = (0.06 + (startIndex + i) * 0.07) + "s";
+      card.style.animationName = "none";
+      card.offsetHeight;
+      card.style.animationName = "";
+    });
+  }
+
   function render() {
     const lang = window.i18n.getLang();
 
@@ -50,6 +59,7 @@
         photo: data.pi.photo,
         slug: data.pi.slug,
       });
+      applyStagger(piWrap, 0);
     }
 
     const list = document.getElementById("member-list");
@@ -62,6 +72,7 @@
         return cardHtml({ name, role, bio, photo: m.photo, slug: m.slug });
       })
       .join("");
+    applyStagger(list, piWrap ? 1 : 0);
   }
 
   async function init() {
