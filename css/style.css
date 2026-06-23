@@ -374,7 +374,7 @@ section.block > h2::before {
 .member-avatar {
   width: 96px;
   height: 96px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   object-fit: cover;
   flex-shrink: 0;
   background: var(--bg-alt);
