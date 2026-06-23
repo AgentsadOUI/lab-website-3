@@ -18,10 +18,8 @@
     return `<div class="member-avatar member-avatar-fallback">${initials(name)}</div>`;
   }
 
-  function cardHtml({ name, role, bio, photo, slug }) {
-    const nameHtml = slug
-      ? `<a href="member.html?slug=${encodeURIComponent(slug)}">${name}</a>`
-      : name;
+  function cardHtml({ name, role, bio, photo }) {
+    const nameHtml = name;
     return `
       <div class="member-card">
         ${avatarHtml(name, photo)}
@@ -57,7 +55,6 @@
         role: piRole,
         bio: piBio,
         photo: data.pi.photo,
-        slug: data.pi.slug,
       });
       applyStagger(piWrap, 0);
     }
@@ -69,7 +66,7 @@
         const name = lang === "ja" ? m.name_ja : m.name_en;
         const role = lang === "ja" ? m.role_ja : m.role_en;
         const bio = lang === "ja" ? m.bio_ja : m.bio_en;
-        return cardHtml({ name, role, bio, photo: m.photo, slug: m.slug });
+        return cardHtml({ name, role, bio, photo: m.photo });
       })
       .join("");
     applyStagger(list, piWrap ? 1 : 0);
