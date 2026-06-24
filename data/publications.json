@@ -10,9 +10,9 @@
   },
   {
     "year": 2024,
-    "authors": "Magin Benedict Ferrer; Daiyu Harada; Colin J. Martin; Rémi Métivier; Clémence Allain; Keitaro Nakatani; Marine Louis; Noriaki Kawaguchi; Takayuki Yanagida; Kazuma Yasuhara; Tsuyoshi Kawai",
+    "authors": "Ferrer, M.B.; Harada, D.; Martin, C.J.; Métivier, R.; Allain, C.; Nakatani, K.; Louis, M.; Kawaguchi, N.; Yanagida, T.; Yasuhara, K.; Kawai, T.",
     "title": "Cascade Fluorescence Modulation in Photochromic Microcapsules",
-    "journal": "ACS Applied Materials & Interfaces",
+    "journal": "ACS Applied Materials and Interfaces",
     "vol_pages": "",
     "link": "https://doi.org/10.1021/acsami.4c09023",
     "photo": ""
@@ -37,7 +37,7 @@
   },
   {
     "year": 2024,
-    "authors": "Shiho Katsumi; Marine Louis; Tsumoru Morimoto; Chigusa Goto; Shouhei Katao; Fuyuki Ito; Rémi Métivier; Tsuyoshi Kawai; Clémence Allain",
+    "authors": "Katsumi, S.; Louis, M.; Morimoto, T.; Goto, C.; Katao, S.; Ito, F.; Métivier, R.; Kawai, T.; Allain, C.",
     "title": "Amino methoxy difluoroboron diketonate as a multicolor and multi-responsive polymorphic fluorescence emitter",
     "journal": "Journal of Photochemistry and Photobiology A: Chemistry",
     "vol_pages": "",
@@ -55,20 +55,20 @@
   },
   {
     "year": 2023,
-    "authors": "Louis, Marine; Tan, Yan Bing; Reine, Pablo; Katao, Shohei; Nishikawa, Yoshiko; Asanoma, Fumio; Kawai, Tsuyoshi",
+    "authors": "Louis, M.; Tan, Y.B.; Reine, P.; Katao, S.; Nishikawa, Y.; Asanoma, F.; Kawai, T.",
     "title": "Conglomerate, Racemate, and Achiral Crystals of Polymetallic Europium(III) Compounds of Bis- or Tris-β-diketonate Ligands and Circularly Polarized Luminescence Study",
     "journal": "ACS Omega",
     "vol_pages": "",
-    "link": "https://doi.org/10.1021/ACSOMEGA.2C07310",
+    "link": "https://doi.org/10.1021/acsomega.2c07310",
     "photo": ""
   },
   {
     "year": 2022,
-    "authors": "Panis, Joy Ann; Louis, Marine; Brosseau, Arnaud; Katao, Shouhei; de los Reyes, Florencio; Nakashima, Takuya; Metivier, Remi; Allain, Clemence; Kawai, Tsuyoshi",
+    "authors": "Panis, J.A.; Louis, M.; Brosseau, A.; Katao, S.; de los Reyes, F.; Nakashima, T.; Métivier, R.; Allain, C.; Kawai, T.",
     "title": "Circularly Polarized Luminescence and Circular Dichroism of Bichromophoric Difluoroboron-β-diketonates: Inversion and Enhanced Chirality Based on Spatial Arrangements and Self-Assembly",
     "journal": "Chemistry - A European Journal",
     "vol_pages": "",
-    "link": "https://doi.org/10.1002/CHEM.202201012",
+    "link": "https://doi.org/10.1002/chem.202201012",
     "photo": ""
   },
   {
@@ -91,20 +91,20 @@
   },
   {
     "year": 2020,
-    "authors": "Thomas, Heidi; Pastoetter, Dominik L.; Gmelch, Max; Achenbach, Tim; Schloegl, Annika; Louis, Marine; Feng, Xinliang; Reineke, Sebastian",
+    "authors": "Thomas, H.; Pastoetter, D.L.; Gmelch, M.; Achenbach, T.; Schlögl, A.; Louis, M.; Feng, X.; Reineke, S.",
     "title": "Aromatic Phosphonates: A Novel Group of Emitters Showing Blue Ultralong Room Temperature Phosphorescence",
     "journal": "Advanced Materials",
     "vol_pages": "",
-    "link": "https://doi.org/10.1002/ADMA.202000880",
+    "link": "https://doi.org/10.1002/adma.202000880",
     "photo": ""
   },
   {
     "year": 2020,
-    "authors": "Louis, Marine; Thomas, Heidi; Gmelch, Max; Fries, Felix; Haft, Anna; Lindenthal, Jakob; Reineke, Sebastian",
+    "authors": "Louis, M.; Thomas, H.; Gmelch, M.; Fries, F.; Haft, A.; Lindenthal, J.; Reineke, S.",
     "title": "Biluminescence Under Ambient Conditions: Water-Soluble Organic Emitter in High-Oxygen-Barrier Polymer",
     "journal": "Advanced Optical Materials",
     "vol_pages": "",
-    "link": "https://doi.org/10.1002/ADOM.202000427",
+    "link": "https://doi.org/10.1002/adom.202000427",
     "photo": ""
   },
   {
@@ -127,11 +127,11 @@
   },
   {
     "year": 2019,
-    "authors": "Louis, Marine; Sethy, Ramarani; Kumar, Jatish; Katao, Shouhei; Guillot, Regis; Nakashima, Takuya; Allain, Clemence; Kawai, Tsuyoshi; Metivier, Remi",
+    "authors": "Louis, M.; Sethy, R.; Kumar, J.; Katao, S.; Guillot, R.; Nakashima, T.; Allain, C.; Kawai, T.; Métivier, R.",
     "title": "Mechano-responsive circularly polarized luminescence of organic solid-state chiral emitters",
     "journal": "Chemical Science",
     "vol_pages": "",
-    "link": "https://doi.org/10.1039/C8SC04026E",
+    "link": "https://doi.org/10.1039/c8sc04026e",
     "photo": ""
   },
   {
@@ -145,11 +145,20 @@
   },
   {
     "year": 2018,
-    "authors": "Louis, Marine; Guillot, Regis; Metivier, Remi; Allain, Clemence",
-    "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
-    "journal": "Photochemical & Photobiological Sciences",
+    "authors": "",
+    "title": "Mechano-responsive circularly polarized luminescence of organic solid-state chiral emitters",
+    "journal": "Chemical Sciences",
     "vol_pages": "",
-    "link": "https://doi.org/10.1039/C8PP00070K",
+    "link": "",
+    "photo": ""
+  },
+  {
+    "year": 2018,
+    "authors": "",
+    "title": "β-Diketone derivatives: influence of the chelating group on the photophysical and mechanofluorochromic properties",
+    "journal": "Photochemical and Photobiological Sciences",
+    "vol_pages": "",
+    "link": "",
     "photo": ""
   },
   {
@@ -163,7 +172,16 @@
   },
   {
     "year": 2018,
-    "authors": "",
+    "authors": "Louis, M.; Guillot, R.; Métivier, R.; Allain, C.",
+    "title": "β-Diketone derivatives: Influence of the chelating group on the photophysical and mechanofluorochromic properties",
+    "journal": "Photochemical and Photobiological Sciences",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1039/c8pp00070k",
+    "photo": ""
+  },
+  {
+    "year": 2018,
+    "authors": "Wilbraham, L.; Louis, M.; Alberga, D.; Brosseau, A.; Guillot, R.; Ito, F.; Labat, F.; Métivier, R.; Allain, C.; Ciofini, I.",
     "title": "Revealing the Origins of Mechanically Induced Fluorescence Changes in Organic Molecular Crystals",
     "journal": "Advanced Materials",
     "vol_pages": "",
@@ -181,18 +199,27 @@
   },
   {
     "year": 2017,
-    "authors": "Louis, Marine; Brosseau, Arnaud; Guillot, Regis; Ito, Fuyuki; Allain, Clemence; Metivier, Remi",
+    "authors": "",
     "title": "Polymorphism, Mechanofluorochromism, and Photophysical Characterization of a Carbonyl Substituted Difluoroboron-β-Diketone Derivative",
     "journal": "The Journal of Physical Chemistry C",
     "vol_pages": "",
-    "link": "https://doi.org/10.1021/ACS.JPCC.7B01901",
+    "link": "",
     "photo": ""
   },
   {
     "year": 2017,
-    "authors": "",
+    "authors": "Louis, M.; Brosseau, A.; Guillot, R.; Ito, F.; Allain, C.; Métivier, R.",
+    "title": "Polymorphism, Mechanofluorochromism, and Photophysical Characterization of a Carbonyl Substituted Difluoroboron-β-Diketone Derivative",
+    "journal": "Journal of Physical Chemistry C",
+    "vol_pages": "",
+    "link": "https://doi.org/10.1021/acs.jpcc.7b01901",
+    "photo": ""
+  },
+  {
+    "year": 2017,
+    "authors": "Sethy, R.; Kumar, J.; Métivier, R.; Louis, M.; Nakatani, K.; Mecheri, N.M.T.; Subhakumari, A.; Thomas, K.G.; Kawai, T.; Nakashima, T.",
     "title": "Enantioselective Light Harvesting with Perylenediimide Guests on Self-Assembled Chiral Naphthalenediimide Nanofibers",
-    "journal": "Angewandte Chemie International Edition",
+    "journal": "Angewandte Chemie - International Edition",
     "vol_pages": "",
     "link": "https://doi.org/10.1002/anie.201707160",
     "photo": ""
