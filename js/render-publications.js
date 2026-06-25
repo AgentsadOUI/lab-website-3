@@ -140,7 +140,20 @@
   async function init() {
     try {
       const res = await fetch(window.i18n.dataPath("publications.json"));
-      items = await res.json();
+      const raw = await res.json();
+      const seen = new Map();
+      raw.forEach((p) => {
+        const key = p.title.trim().toLowerCase();
+        const existing = seen.get(key);
+        if (!existing) {
+          seen.set(key, p);
+        } else {
+          const hasDoi = doiFromLink(p.link);
+          const existingHasDoi = doiFromLink(existing.link);
+          if (hasDoi && !existingHasDoi) seen.set(key, p);
+        }
+      });
+      items = [...seen.values()];
     } catch (e) {
       items = [];
     }
