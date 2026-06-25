@@ -1,32 +1,57 @@
 {
   "pi": {
     "slug": "pi",
-    "ja": "［氏名］",
-    "en": "[PI Name]",
+    "ja": "［Marine LOUIS］",
+    "en": "[Marine LOUIS]",
     "photo": "img/members/photo.jpeg",
     "bio_ja": "［経歴・専門分野などをここに記載］",
-    "bio_en": "[Background and research focus go here]"
+    "bio_en": "[Background and research focus go here]",
+    "name_match": []
   },
   "members": [
     {
       "slug": "member-1",
-      "role_ja": "博士課程",
-      "role_en": "PhD Student",
-      "name_ja": "［氏名］",
-      "name_en": "[Name]",
+      "role_ja": "博士課程 - D3",
+      "role_en": "Doctoral Student - D3",
+      "name_ja": "Mark VIENDO",
+      "name_en": "Mark VIENDO",
       "photo": "img/members/photo1.jpeg",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
-      "bio_en": "[Research interests go here]"
+      "bio_en": "[Research interests go here]",
+      "name_match": []
     },
     {
       "slug": "member-2",
       "role_ja": "修士課程",
       "role_en": "Master's Student",
-      "name_ja": "［氏名］",
-      "name_en": "[Name]",
+      "name_ja": "岡崎　美羽",
+      "name_en": "Miwa OKAZAKI",
       "photo": "img/members/photo2.jpeg",
       "bio_ja": "［専門分野・研究テーマなどをここに記載］",
-      "bio_en": "[Research interests go here]"
+      "bio_en": "[Research interests go here]",
+      "name_match": []
+    },
+    {
+      "slug": "member-3",
+      "role_ja": "修士課程",
+      "role_en": "Master's Student",
+      "name_ja": "関 鴻",
+      "name_en": "Hiroshi SEKI",
+      "photo": "",
+      "bio_ja": "［専門分野・研究テーマなどをここに記載］",
+      "bio_en": "[Research interests go here]",
+      "name_match": []
+    },
+    {
+      "slug": "member-4",
+      "role_ja": "学部生",
+      "role_en": "Bachelor's Student",
+      "name_ja": "",
+      "name_en": "",
+      "photo": "",
+      "bio_ja": "［専門分野・研究テーマなどをここに記載］",
+      "bio_en": "[Research interests go here]",
+      "name_match": []
     }
   ]
 }
